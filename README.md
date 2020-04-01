@@ -12,13 +12,13 @@ Obtained parameter uncertainties using bootstraped dataset
 * fastsimcoal available [here](http://cmpg.unibe.ch/software/fastsimcoal2/)
 
 # Input files 
-* joint site frequency spectrum: located in `./01-spectrum` folder  
+* joint site frequency spectrum: located in `./01-spectrum/` folder  
 For low depth sequencing data I used [angsd](http://www.popgen.dk/angsd/index.php/ANGSD#Overview) to obtain jSFS files.
 
 * To limit the effect of linked selection, gBGC, barriers to gene-flow only sites in fast recombining areas were included in the jSFS
 
 # Running models 
-see scripts in 00-scripts/ 
+see scripts in `00-scripts/` 
 
 # Models 
 * 5 and 6 pops models
