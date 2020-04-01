@@ -9,7 +9,7 @@ Compare most likely scenario using AIC
 Obtained parameter uncertainties using bootstraped dataset 
 
 # Dependencies
-* fastsimcoal availbe [here](http://cmpg.unibe.ch/software/fastsimcoal2/)
+* fastsimcoal available [here](http://cmpg.unibe.ch/software/fastsimcoal2/)
 
 # Input files 
 * joint site frequency spectrum: located in `./01-spectrum` folder  
@@ -17,11 +17,14 @@ For low depth sequencing data I used [angsd](http://www.popgen.dk/angsd/index.ph
 
 * To limit the effect of linked selection, gBGC, barriers to gene-flow only sites in fast recombining areas were included in the jSFS
 
-# Running 
-see scripts in 00-scripts. 
+# Running models 
+see scripts in 00-scripts/ 
 
 # Models 
 * 5 and 6 pops models
 * With and without migration. 
 * With and without population expansion.
 * With and without secondary contacts
+
+5 and 6 pop models can be easily modified by editing those in the folder `02-models`.
+See fastsimcoal manual for further details
