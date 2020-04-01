@@ -28,3 +28,9 @@ see scripts in `00-scripts/`
 
 5 and 6 pop models can be easily modified by editing those in the folder `02-models`.
 See fastsimcoal manual for further details
+
+# To do:
+
+* add all models and topology comparison for models without gene-flow 
+* add Rscript AIC computation
+* add bash command lines for boostraping dataset
