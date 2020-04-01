@@ -4,9 +4,9 @@ multi-population modeling of divergence history and comparison of alternative sc
 This was used in this [paper](https://www.biorxiv.org/content/10.1101/732750v3) looking at expansion load in coho salmon 
 
 # Purpose
-Run different models of divergence with fastsimcoal
-Compare most likely scenario using AIC 
-Obtained parameter uncertainties using bootstraped dataset 
+* Run different models of divergence with fastsimcoal  
+* Compare most likely scenario using AIC  
+* Obtain parameter uncertainties using bootstraped dataset  
 
 # Dependencies
 * fastsimcoal available [here](http://cmpg.unibe.ch/software/fastsimcoal2/)
