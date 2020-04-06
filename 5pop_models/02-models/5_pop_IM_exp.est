@@ -1,0 +1,54 @@
+// Priors and rules file
+// *********************
+[PARAMETERS]
+//#isInt? #name #dist.#min #max
+//all Ns are in number of haploid individuals
+//1 ANCSIZE unif 1000 1000000 output
+1 NA0 unif 1000 1000000 output
+1 NA1 unif 1000 1000000 output
+1 NA2 unif 1000 1000000 output
+1 NA3 unif 1000 1000000 output
+1 NA4 unif 1000 1000000 output
+1 NPOP0 unif 1000 1000000 output
+1 NPOP1 unif 1000 1000000 output
+1 NPOP2 unif 1000 1000000 output
+1 NPOP3 unif 1000 1000000 output
+1 NPOP4 unif 1000 1000000 output
+1 DIV4$ unif 500 12000 output
+1 DIV3$ unif 500 12000 output
+1 DIV2$ unif 500 12000 output
+1 DIV1$ unif 500 12000 output
+0 M01 unif 0.00000001 0.01 output
+0 M02 unif 0.00000001 0.01 output
+0 M03 unif 0.00000001 0.01 output
+0 M10 unif 0.00000001 0.01 output
+0 M20 unif 0.00000001 0.01 output
+0 M30 unif 0.00000001 0.01 output
+0 M12 unif 0.00000001 0.01 output
+0 M21 unif 0.00000001 0.01 output
+0 M24 unif 0.00000001 0.01 output
+0 M42 unif 0.00000001 0.01 output
+0 M23 unif 0.00000001 0.01 output
+0 M32 unif 0.00000001 0.01 output
+//0 MUT unif 0.000000001 0.00000005 output
+[RULES]
+[COMPLEX PARAMETERS]
+0 T0 = NA0/NPOP0 hide
+0 T1 = NA1/NPOP1 hide
+0 T2 = NA2/NPOP2 hide
+0 T3 = NA3/NPOP3 hide
+0 T4 = NA4/NPOP4 hide
+0 L0 = log(T0) hide
+0 L1 = log(T1) hide
+0 L2 = log(T2) hide
+0 L3 = log(T3) hide
+0 L4 = log(T4) hide
+0 R0 = L0/DIV1$ output
+0 R1 = L1/DIV1$ output
+0 R2 = L2/DIV2$ output
+0 R3 = L3/DIV3$ output
+0 R4 = L4/DIV4$ output
+1 TDIV3 = DIV4$ + DIV3$ output
+1 TDIV2 = TDIV3 + DIV2$ output
+1 TDIV1 = TDIV2 + DIV1$ output
+

@@ -1,0 +1,28 @@
+// Priors and rules file
+// *********************
+[PARAMETERS]
+//#isInt? #name #dist.#min #max
+//all Ns are in number of haploid individuals
+1 ANCSIZE unif 1000 1000000 output
+1 NA20 unif 1000 1000000 output
+1 NA32 unif 1000 1000000 output
+1 NA42 unif 1000 1000000 output
+1 NPOP0 unif 1000 1000000 output
+1 NPOP1 unif 1000 1000000 output
+1 NPOP2 unif 1000 1000000 output
+1 NPOP3 unif 1000 1000000 output
+1 NPOP4 unif 1000 1000000 output
+1 DIV3$ unif 500 12000 output
+1 DIV2$ unif 500 12000 output
+1 DIV1$ unif 500 12000 output
+1 DIV0$ unif 500 20000 output 
+[RULES]
+[COMPLEX PARAMETERS]
+0 RESIZE10 = ANCSIZE/NPOP0 hide
+0 RESIZE20 = NA20/NPOP2 hide
+0 RESIZE32 = NA32/NPOP2 hide
+0 RESIZE40 = NA42/NPOP0 hide
+1 TDIV3 = DIV4$ + DIV3$ output
+1 TDIV2 = TDIV3 + DIV2$ output
+1 TDIV1 = TDIV2 + DIV1$ output
+1 TDIV0 = TDIV1 + DIV0$ output
